@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
 
-A comprehensive, cross-platform network diagnostic and telemetry pipeline developed in Python. This project fulfills all requirements for **Experiment 4: Network Diagnostic and Topology Path Analyzer Engine** for the **Data Communication and Networks (DCN)** laboratory curriculum.
+A complete, production-grade network diagnostic and topology path analysis suite in Python. This repository contains the complete working software implementation, final PowerPoint presentation, and visual analytical reports for **Experiment 4: Network Diagnostic and Topology Path Analyzer Engine** for the **Data Communication and Networks (DCN)** curriculum.
 
 ---
 
@@ -20,6 +20,22 @@ A comprehensive, cross-platform network diagnostic and telemetry pipeline develo
 | **3** | **Yasharth Jaiswal** | `590023687` | Regular Expression Parsing & Metric Extraction Core |
 | **4** | **Satvik Arora** | `590028424` | Latency Benchmarking & Hop-by-Hop Topology Path Analytics |
 | **5** | **Yashvardhan Singh** | `590021777` | Temporal Latency Heatmaps & Live Telemetry Demonstration |
+
+---
+
+## 📽️ Lab Presentation (PPTX)
+
+The final presentation ready for evaluation is available in this repository:
+- 📥 **[Download Presentation: Experiment_4_Network_Diagnostic_Analyzer_Presentation.pptx](./Experiment_4_Network_Diagnostic_Analyzer_Presentation.pptx)**
+
+### Slide Deck Highlights (12 Slides):
+- **Slide 1:** Team profile cards, Batch ID `DCN_17_02`, Group 4, and SAP IDs.
+- **Slide 2:** Academic Syllabus Alignment (Units I, IV, and V) & Students Tasks mapping.
+- **Slides 3–4 (Sparsh Srivastava):** Real-world motivation, ICMP Type 8/0 exchange, and 8-bit TTL mechanics.
+- **Slides 5–6 (Aayushman Kothari):** Subprocess wrapper architecture and DNS hierarchy resolution.
+- **Slides 7–8 (Yasharth Jaiswal):** Regular expression metric engine and non-responsive hop handling.
+- **Slides 9–10 (Satvik Arora):** Multi-target latency benchmark charts and hop-by-hop path curves.
+- **Slides 11–12 (Yashvardhan Singh):** Diurnal latency heatmaps, QoS bufferbloat, live demo, and roadmap.
 
 ---
 
@@ -58,7 +74,7 @@ A comprehensive, cross-platform network diagnostic and telemetry pipeline develo
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Running the Project
 
 ### 1. Prerequisites
 Ensure you have Python 3.8+ installed:
@@ -71,41 +87,28 @@ python --version
 pip install -r requirements.txt
 ```
 
-### 3. Run the Network Diagnostic Engine
+### 3. Run the Live Diagnostic Engine
 ```bash
 python network_analyzer.py
 ```
-
-### 4. Regenerate Analytics Plots
-```bash
-python generate_charts.py
-```
-
-### 5. Build or Update the PowerPoint Presentation
-```bash
-python make_presentation.py
-```
-This generates `Network_Diagnostic_Analyzer_Exp4_Syllabus_Team.pptx` complete with all 12 slides, speaker notes, and embedded charts.
+This runs the diagnostic engine, displays real-time telemetry for all configured targets, and outputs formatted metrics.
 
 ---
 
-## 📁 Project Structure
+## 📁 Repository Structure
 
 ```
 DCN-Lab-Exp4-Network-Diagnostic-Engine/
 │
-├── network_analyzer.py       # Core cross-platform diagnostic & regex parsing engine
-├── generate_charts.py        # Matplotlib visualization script for bar charts, curves & heatmaps
-├── make_presentation.py      # Automated PPTX presentation generator with team allocations
-├── requirements.txt          # Python dependencies
-├── README.md                 # Project documentation and guide
+├── Experiment_4_Network_Diagnostic_Analyzer_Presentation.pptx  # The final 12-slide presentation deck
+├── network_analyzer.py                                         # The core Python diagnostic engine (Tasks 1, 2, 3)
+├── requirements.txt                                            # Project dependencies
+├── README.md                                                   # Complete project documentation
 │
-├── figures/                  # Generated high-resolution diagnostic plots
-│   ├── latency_chart.png     # Multi-target RTT bar chart
-│   ├── hop_curve.png         # Hop-by-hop latency curve
-│   └── latency_heatmap.png   # Time-of-day jitter & congestion heatmap
-│
-└── Network_Diagnostic_Analyzer_Exp4_Syllabus_Team.pptx # 12-slide lab presentation
+└── figures/                                                    # Visual charts & heatmaps embedded in PPTX
+    ├── latency_chart.png                                       # Multi-target RTT bar chart
+    ├── hop_curve.png                                           # Hop-by-hop latency progression curve
+    └── latency_heatmap.png                                     # Diurnal congestion & jitter heatmap
 ```
 
 ---
